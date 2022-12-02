@@ -1,0 +1,56 @@
+{% extends 'myapp/base.html'%}
+{% block content%}
+<div class="container mt-5">
+    <div class="text-warning mb-3 border-bottom mb-3"><h2>CONTACT US</h2></div>
+    <div class="row text-white mb-5">
+        <p class="mx-auto mb-4">Do you have any question? Please do not hesitate to contact. I will come back to you within a matter of hours to help</p>
+        <div class="col-sm-9 mb-3">
+            <form action="" method="Post">
+            {% csrf_token %}
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">your Name</label>
+                        <input type="text" class="form-control" id="inputName" name="name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Your Email</label>
+                        <input type="text" class="form-control" id="inputName" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputName">your Subject</label>
+                        <input type="text" class="form-control" id="inputName" name="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputName">Your Message</label>
+                        <input type="text" class="form-control" id="inputName" name="text">
+                    </div><br><br>
+                    <button class="btn btn-primary" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-3 text-center">
+            <ul class="list-unstyled">
+                <li>
+                    <a href ="https://www.google.com/maps/place/Tapa,+Punjab+148108/@30.2999802,75.3523491,14z/data=!3m1!4b1!4m5!3m4!1s0x3910e9b43f415405:0x9171b2fe87a7338e!8m2!3d30.3017458!4d75.3703662"><i class="fa-solid fa-location-dot fa-2x i-color" style="color:greenyellow;"></i></a>
+                    <p>Tapa Mandi,Punjab,India</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone mt-4 fa-2x i-color" style="color:greenyellow;"></i>
+                    <p> +91 7814499823</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope mt-4 fa-2x i-color"style="color:greenyellow;"></i>
+                    <p>kamaltapa323@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>    
+<div class="text-center">
+    <a href="" target="_blank"><i class="fab fa-twitter i-color mr-3"></i></a>
+    <a href="" target="_blank"><i class="fab fa-facebook-f i-color mr-3"></i></a>
+    <a href="" target="_blank"><i class="fab fa-instagram i-color mr-3"></i></a>
+    <a href="" target="_blank"><i class="fab fa-dribbble i-color"></i></a>
+</div>
+</div>
+{% endblock content %}
+
